@@ -6,12 +6,52 @@ body {
 }
 .cat-head{
     position: absolute;
-  top: 100px;
-  left: 100px;
-
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: auto;
+/* The above is one way to center an element. we adjusted this with fixed, relative, sticky & static in the workshop, so I kept it separate.*/
     width: 205px;
     height: 180px;
     border: 1px solid #000;
     border-radius: 46%;
     background: linear-gradient(#5e5e5e 85%, #45454f 100%);
+}
+.cat-left-ear {
+    position: absolute;
+    top: -26px;
+    left: -31px;
+    z-index: 1;
+    border-top-left-radius: 90px;
+    border-top-right-radius: 10px;
+    border-left: 35px solid transparent;
+    border-right: 35px solid transparent;
+    border-bottom: 70px solid #5e5e5e;
+    transform: rotate(-45deg);
+}
+.cat-right-ear {
+    position: absolute;
+    top: -26px;
+    left: 163px;
+    z-index: 1;
+    border-top-left-radius: 90px;
+    border-top-right-radius: 10px;
+    border-left: 35px solid transparent;
+    border-right: 35px solid transparent;
+    border-bottom: 70px solid #5e5e5e;
+    transform: rotate(45deg);
+}
+.cat-left-inner-ear {
+    position: absolute;
+    top: 22px;
+    left: -20px;
+    /* fCC interface crapped out. through step 34. re-try later, unsure of radius property-values yet*/
+    border-bottom-right-radius: 40%;
+    border-bottom-left-radius: 40%;
+    border-top-left-radius: 90px;
+    border-top-right-radius: 10px;
+    border-left: 20px solid transparent;
+    border-right: 20px solid transparent;
+    border-bottom: 40px solid #3b3b4f;
 }
